@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: "user-service"
+  config:
+    import: "optional:configserver:"
+
+server:
+  port: 8083
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8080/eureka/"
