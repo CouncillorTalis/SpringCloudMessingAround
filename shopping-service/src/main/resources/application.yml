@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: "shopping-service"
+  config:
+    import: "optional:configserver:"
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8080/eureka/"
